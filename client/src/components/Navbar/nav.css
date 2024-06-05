@@ -1,0 +1,27 @@
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* display: flex; 수평으로 정렬 */
+    /* justify-content: center; 가운데 정렬 */
+}
+
+li {
+    margin: 0 10px;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

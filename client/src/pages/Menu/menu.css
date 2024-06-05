@@ -1,0 +1,133 @@
+.menu-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d7c351;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.menu-header {
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.menu-header h2 {
+    color: #000000;
+}
+
+.menu-header p {
+    color: black; /* 글씨 색상을 검은색으로 설정 */
+    margin-bottom: 20px;
+}
+
+.menu-options {
+    margin-bottom: 20px;
+}
+
+.option-group {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.option-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.option-button:hover {
+    background-color: #000000;
+}
+
+.option-button.selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.menu-recommend {
+    margin-top: 20px;
+}
+
+.recommend-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* .recommend-button:hover {
+    background-color: #0056b3;
+} */
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* 수평으로 정렬 */
+    justify-content: center; /* 가운데 정렬 */
+}
+
+li {
+    margin: 0 10px;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.random-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* 적절한 높이로 설정 */
+    margin-top: 20px;
+}
+
+.random-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.random-image p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: black;
+}
+
+.recommended-menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

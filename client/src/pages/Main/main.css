@@ -1,0 +1,83 @@
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* 화면 전체 높이를 사용합니다 */
+    text-align: center; /* 자식 요소들을 수평으로 가운데 정렬합니다 */
+}
+
+.content-container img {
+    width: 50%; /* 이미지의 너비를 설정합니다 */
+    margin: 0 auto; /* 수평 중앙 정렬을 적용합니다 */
+}
+
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* 위쪽 여백 추가 */
+    z-index: 1001; /* 다른 요소 위에 표시되도록 설정 */
+    position: relative; /* z-index가 동작하려면 position 속성이 필요합니다 */
+}
+
+
+nav {
+    position: fixed; /* 화면 상단에 고정됩니다. */
+    top: 0; /* 화면의 맨 위에 위치합니다. */
+    left: 0;
+    width: 100%; /* 너비를 화면 전체로 설정합니다. */
+    z-index: 1000; /* 다른 요소보다 위에 표시됩니다. */
+    background-color: #e3c267;
+    padding: 10px 0;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* 수평으로 정렬 */
+    justify-content: center; /* 가운데 정렬 */
+}
+
+li {
+    margin: 0 10px;
+    display: flex;
+}
+
+/* a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+} */
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+button, a {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2da3ec;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, a:hover {
+    background-color: #0056b3;
+}
+
+body{
+    background-color: #f1dba1;
+}
+
+h1{
+    font-size: 100px;
+    color: black;
+}

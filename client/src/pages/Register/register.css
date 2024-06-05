@@ -1,0 +1,68 @@
+
+.register-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #49bdad;
+    border: 1px solid #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.check-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.check-button:hover {
+    background-color: #444;
+}
+
+.password-note {
+    font-size: 0.9em;
+    color: red;
+    margin-top: 5px;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cancel-button, .submit-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.cancel-button:hover, .submit-button:hover {
+    background-color: #444;
+}
