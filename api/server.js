@@ -94,7 +94,7 @@ app.post('/api/auth/login', async (req, res) => {
     }
     
     const token = jwt.sign({ id: user._id, username: user.username }, process.env.JWT, { expiresIn: '1h' });
-    res.cookie('token', token, { httpOnly: true });
+    res.cookie('token', token, { httpOnly: true, domain: "prjpages.xyz"});
     res.json({ message: 'Login successful', user });
   } catch (error) {
     res.status(500).json({ message: error.message });
