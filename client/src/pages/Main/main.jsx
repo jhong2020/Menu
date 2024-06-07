@@ -9,7 +9,7 @@ const Main = ({ isLoggedIn, handleLogout }) => {
         <div className="main-container">
             <LeftSidebar />
             <RightSidebar />
-            <h1>점메추좀 ㅎㅎ</h1>
+            <h1>점메추</h1>
             <div className="content-container">
                 <div className="image-wrapper">
                     

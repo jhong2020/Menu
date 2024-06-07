@@ -18,7 +18,7 @@ const Mypage = ({ user }) => {
     useEffect(() => {
         const fetchUserData = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/auth/user/${user._id}`, { withCredentials: true });
+                const response = await axios.get(process.env.REACT_APP_API_URL+`/api/auth/user/${user._id}`, { withCredentials: true });
                 setUserInfo(response.data);
             } catch (error) {
                 console.error('Error fetching user data:', error);
@@ -54,7 +54,7 @@ const Mypage = ({ user }) => {
                 updateData.password = password;
             }
 
-            const response = await axios.put('http://localhost:5000/api/auth/update-profile', updateData, { withCredentials: true });
+            const response = await axios.put(process.env.REACT_APP_API_URL+'/api/auth/update-profile', updateData, { withCredentials: true });
             setUserInfo(response.data);
             setPassword('');
             setIsEditing({

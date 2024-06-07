@@ -19,7 +19,7 @@ function App() {
     useEffect(() => {
         const checkLoginStatus = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/auth/check', { withCredentials: true });
+                const response = await axios.get(process.env.REACT_APP_API_URL+'/api/auth/check', { withCredentials: true });
                 if (response.data.loggedIn) {
                     setIsLoggedIn(true);
                     setUser(response.data.user);
@@ -43,7 +43,7 @@ function App() {
 
     const handleLogout = async () => {
         try {
-            await axios.post('http://localhost:5000/api/auth/logout', {}, { withCredentials: true });
+            await axios.post(process.env.REACT_APP_API_URL+'/api/auth/logout', {}, { withCredentials: true });
             setIsLoggedIn(false);
             setUser(null);
         } catch (error) {

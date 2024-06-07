@@ -32,7 +32,7 @@ const Register = () => {
 
     const checkUsername = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/check-username', { username: form.username });
+            const response = await axios.post(process.env.REACT_APP_API_URL+'/api/auth/check-username', { username: form.username });
             console.log('Username check response:', response.data);
             if (response.data.available) {
                 toast.success(response.data.message);
@@ -50,7 +50,7 @@ const Register = () => {
 
     const checkEmail = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/check-email', { email: form.email });
+            const response = await axios.post(process.env.REACT_APP_API_URL+'/api/auth/check-email', { email: form.email });
             console.log('Email check response:', response.data);
             if (response.data.available) {
                 toast.success(response.data.message);
@@ -81,7 +81,7 @@ const Register = () => {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/register', form);
+            const response = await axios.post(process.env.REACT_APP_API_URL+'/api/auth/register', form);
             console.log('회원가입 정보:', response.data);
             toast.success('회원가입이 완료되었습니다!');
             navigate('/login');

@@ -1,0 +1,17 @@
+{
+  "name": "random",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000M\u0000e\u0000n\u0000u\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

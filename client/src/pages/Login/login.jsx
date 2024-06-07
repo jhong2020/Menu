@@ -24,7 +24,7 @@ const Login = ({ handleLogin }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/login', form, { withCredentials: true });
+            const response = await axios.post(process.env.REACT_APP_API_URL+'/api/auth/login', form, { withCredentials: true });
             handleLogin(response.data.user);
             navigate('/');  // 로그인 성공 후 메인페이지로 리디렉션
         } catch (error) {
